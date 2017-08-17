@@ -49,3 +49,14 @@ $ npm list --long true - Prints out project dependencies with some extra info.
 $ npm list --dev true - Prints out project dev dependencies.
 $ npm list --json true - Prints out project dependencies in json format.
 ```
+
+#Pruning: Remove unused, installed packages. npm list will attach an *extraneous* flag to packages that need to be pruned
+```
+$ npm prune - This will compare installed packages and packages in dependencies in package.json and remove unlisted packages.
+```
+
+#Misc...
+```
+$ npm repo <package-name> - open official package repo in browser.
+$ npm i npm@latest -g - Upgrade with admin priv, will mess up win env if not run with admin priv!!
+```
