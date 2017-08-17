@@ -14,7 +14,7 @@ $ npm help <command> - opens up docs for command in browser, loded from a local 
 $ npm help-search <search-term> - lists out matching terms from docs
 ```
 
-#Installing/Uninstalling Packages
+#Installing/Uninstalling/Updating Packages
 ```
 $ npm install <package-name> - install a new package
 $ npm install <package-name> -S - install a new package and save to package.json
@@ -34,6 +34,7 @@ package.json dependencies::
 $ npm install <dev-only-package> -D - install and add a package to dev dependencies, eg karma
 $ npm uninstall <package-name> - This will uninstall package, package name will still persist in package.json, add -g flag for global package
 $ npm uninstall <package-name> --save - Uninstall and remove from package.json 
+$ npm update --dev/prod - update dev/prod dependencies, no flags, update all dependencies. 
 ```
 Semantic versioning for packages: Major(new features added that are not backwards compatible, can break existing code).Minor(new features added, usually backwards compatible, does not braek existing code).Revision(Patch fix/Bug fix/Performance improvement)
 
