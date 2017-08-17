@@ -34,7 +34,8 @@ package.json dependencies::
 $ npm install <dev-only-package> -D - install and add a package to dev dependencies, eg karma
 $ npm uninstall <package-name> - This will uninstall package, package name will still persist in package.json, add -g flag for global package
 $ npm uninstall <package-name> --save - Uninstall and remove from package.json 
-$ npm update --dev/prod - update dev/prod dependencies, no flags, update all dependencies. 
+$ npm update --dev/prod - update dev/prod dependencies, no flags, update all dependencies.
+$ npm update -g <package-name> - update globally installed packages
 ```
 Semantic versioning for packages: Major(new features added that are not backwards compatible, can break existing code).Minor(new features added, usually backwards compatible, does not braek existing code).Revision(Patch fix/Bug fix/Performance improvement)
 
