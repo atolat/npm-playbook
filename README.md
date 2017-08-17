@@ -20,11 +20,17 @@ $ npm install <package-name> - install a new package
 $ npm install <package-name> -S - install a new package and save to package.json
 $ npm install <package-name> -g - install a new package globally,this does not install packages in the project dir. 
 $ npm install <package-name@version> - install package at a specific version
-##version semantics: @1.7 - latest version at minor 1.7.x
-					           @1.x - latest minor
-					           @">=1.1.0 <1.4.0...add more boolean compound terms" - Anything that falls between 1.1.0 & 1.4.0
-					           "^1.8.3" - install latest version whenever npm install is run, remove ^ or use --save-exact flag to prevent npm from installing latest version.
-
+```
+##version semantics:   
+command flags::  
+@1.7 - latest version at minor 1.7.x  
+@1.x - latest minor  
+package.json dependencies::  
+@">=1.1.0 <1.4.0...add more boolean compound terms" - Anything that falls between 1.1.0 & 1.4.0  
+"^1.8.3" - install latest version of major release whenever npm install is invoked, remove ^ or use --save-exact flag to prevent npm     from installing latest version.
+"~1.8.3" - latest version of minor release when npm install is invoked.  
+"\*" - always update to latest, minor/major/*  
+```
 $ npm install <dev-only-package> -D - install and add a package to dev dependencies, eg karma
 $ npm uninstall <package-name> - This will uninstall package, package name will still persist in package.json, add -g flag for global package
 $ npm uninstall <package-name> --save - Uninstall and remove from package.json 
