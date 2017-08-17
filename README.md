@@ -20,6 +20,8 @@ $ npm install <package-name> - install a new package
 $ npm install <package-name> -S - install a new package and save to package.json
 $ npm install <package-name> -g - install a new package globally,this does not install packages in the project dir. 
 $ npm install <package-name@version> - install package at a specific version
+$ npm install <dev-only-package> -D - install and add a package to dev dependencies, eg karma, gulp
+$ npm install <.git repo/gist:gistHash/url/path to local package> --save - install packages from sources not listed in npm registry.
 ```
 ##version semantics:   
 command flags::  
@@ -31,7 +33,6 @@ package.json dependencies::
 "~1.8.3" - latest version of minor release when npm install is invoked.  
 "\*" - always update to latest, minor/major/*  
 ```
-$ npm install <dev-only-package> -D - install and add a package to dev dependencies, eg karma
 $ npm uninstall <package-name> - This will uninstall package, package name will still persist in package.json, add -g flag for global package
 $ npm uninstall <package-name> --save - Uninstall and remove from package.json 
 $ npm update --dev/prod - update dev/prod dependencies, no flags, update all dependencies.
